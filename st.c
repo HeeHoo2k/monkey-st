@@ -1012,7 +1012,7 @@ getsel(void)
 		#else
 			(y < sel.ne.y || lastx >= linelen)
 		#endif //
-		    && (!(lgp->mode & ATTR_WRAP) || sel.type == SEL_RECTANGULAR))
+		    && (!(gp->mode & ATTR_WRAP) || sel.type == SEL_RECTANGULAR))
 			*ptr++ = '\n';
 	}
 	#if COLUMNS_REFLOW_PATCH
